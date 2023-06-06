@@ -1,0 +1,104 @@
+Operador                   Descrição
+   +                       Adição    (e mais unário)
+   -                       Subtração (e menos unário)
+   *                       Multiplicação
+   /                       Divisão
+   %                       Módulo
+   ++                      Incremento (pos ou pré fix)
+   --                      Decremento (pos ou pré fix)
+
+   Ex:
+
+   int resultado = 1 + 2;
+   System.out.println(resultado);
+
+   resultado = resultado - 1;
+   System.out.println(resultado);
+
+   resultado = resultado * 2;
+   System.out.println(resultado);
+
+   resultado = resultado / 2;
+   System.out.println(resultado);
+
+   resultado = + 8
+
+   resultado = resultado % 7;
+   System.out.println(resultado);
+
+
+   Operador de '+' usado para concatenar Strings
+
+   Ex:
+
+   String primeiraString = "Esta é";
+   String segundaString = " uma String concatenada.";
+   String terceiraString = primeiraString + segundaString;
+   System.out.println(terceiraString);
+
+
+   Incremento e Decremento
+
+   Ex:
+
+   int i = 3;
+   i++;
+   //output 4
+   System.out.println(i);
+   ++i;
+   //output 5
+   System.out.println(i);
+   //output 6
+   System.out.println(++1);
+   //output 6
+   System.out.println(i++);
+   //output 7
+   System.out.println(i);
+
+
+   Operadores relacionais
+
+   Operador         Descrição
+      ==            Igual a
+      !=            Diferfente de
+      >             Maior que
+      <             Menor que
+      >=            Maior ou igual que
+      <=            Menor ou igual que
+
+
+
+
+    Operadores lógicos
+
+
+    Operador         Descrição
+       &             AND
+       |             OR
+       ^             XOR
+       ||            OR curto circuito
+       &&            AND curto circuito
+       !             NOT
+
+
+                        Tabela verdade
+
+
+            a               b            a & b         a | b       a ^ b             !a
+          Falso           Falso          Falso         Falso       Falso          Verdadeiro
+
+       Verdadeiro    |    Falso      |   Falso    |  Verdadeiro | Verdadeiro   |   Falso
+
+          Falso      |   Verdadeiro  |   Falso    |  Verdadeiro | Verdadeiro   |  Verdadeiro
+
+       Verdadeiro    |   Verdadeiro  | Verdadeiro |  Verdadeiro |  Falso       |   Falso
+
+
+
+       Quando 'a' & 'b' o resultado só é verdadeiro quando os dois são verdadeiros.
+
+       Quando 'a' | 'b' só é falso quando os dois são falsos.
+
+       Quando 'a' ^ 'b' só é verdadeiro quando são diferentes e se foram iguais são falsos.
+
+       Quando !a a negação do Falso é verdadeiro e a negão de Verdadeiro é falso.

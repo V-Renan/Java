@@ -1,0 +1,88 @@
+                              tipos primitivos
+      boolean                                   -----------------números----------------
+                                              /                                         \
+                                            inteiros                              ponto flutuante
+                             byte----short----int----long----char.                float----double.
+
+
+
+
+
+Tipos Inteiros
+
+Byte - Números pequenos            (8)
+Short - Números maiores que o byte (16)
+Int - Maiores que o short          (32)
+Long - Maiores que o int           (64)
+(Int e Long são mais usados)
+
+
+Char - Carácter
+
+char o = 'o';  ('i' tem o valor de 111)
+char i = 'i'; ('o' tem o valor de 105)
+(pesquisar Ascii quando for necessário)
+System.out.println("" + o + i);
+O print vai retornar "oi" quando houver aspas
+
+char interrogação = 0x00E1;
+
+Pontos Flutuantes
+
+Float - Números com casas decimais
+Double - Mesma coisa  (Diferença é o tamanho ocupado na memoria (Double é o mais usado))
+
+
+
+Boolean verdadeiro = true;
+Boolean falso = false;
+
+
+
+
+                                                  Literais
+                                        Hexadecimais, Octais, Binários
+
+                                    int decVal = 26;
+                                    int hexVal = 0x1a;
+                                    int octVal = 032;
+                                    int binVal = 0b110010;
+
+
+
+                                   Pode
+
+                                   long creditCarNumber = 1234_5678_9101112_3456L;
+                                   long cpf = 101_123_321_68L;
+                                   long pi = 3.14_15F;
+                                   long hexBytes = 0xFF_EC_DE_5E;
+                                   long hexWords = 0xCAFE_BABE;
+                                   long maxLong = 0x7fff_ffff_ffff_ffffL;
+                                   byte nybbles = 0b0010_0101;
+                                   long bytes = 0b11010010_01101001_10010100_10010010;
+
+                                   Não pode
+
+                                   Não pode coolocar um underscore perto de ponto, antes nem depois.
+                                   -------- perto de sufixos (sufixo L de "long", F de "Float")
+                                   -------- na frente de um número, pois deixa de ser um literal e vira identificador
+                                   -------- começar nem terminar
+                                   -------- separar prefixos
+
+
+
+                                   Escape - char
+
+                                   Sequência de Escape           Descrição
+                                   \t                            Tab
+                                   \b                            Backspace
+                                   \n                            Nova linha
+                                   \r                            Retorno de carro
+                                   \f                            Avanço de página
+                                   \'                            Aspas simples
+                                   \"                            Aspas duplas
+                                   \\                            Barra invertida
+                                   \ddd                          Constante octal
+                                   \uxxxx                        Constante hexadecimal
+
+
