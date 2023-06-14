@@ -21,20 +21,15 @@ public class exercicio04 {
             System.out.println("(" + letra + ") Consoante.");
         }*/
 
-        switch (letra){
-            case "a":
-            case "e":
-            case "i":
-            case "o":
-            case "u":
-            case "A":
-            case "E":
-            case "I":
-            case "O":
-            case "U":
-                System.out.println("(" + letra + ") Vogal."); break;
-            default:
-                System.out.println("(" + letra + ") Consoante.");
+        if (letra.length() > 1){
+            System.out.println("ERRO! Verifique se digitou corretamente.");
+        } else {
+            switch (letra) {
+                case "a", "e", "i", "o", "u", "A", "E", "I", "O", "U" -> System.out.println("(" + letra + ") Vogal.");
+                default -> System.out.println("(" + letra + ") Consoante.");
+            }
         }
+
+
     }
 }

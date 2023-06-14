@@ -17,13 +17,13 @@ public class exercicio06 {
         System.out.println("Digite o 3ª número: ");
         int n3 = scan.nextInt();
 
-        if (n1 > n2 && n1 > n3){
+        if (n1 >= n2 && n1 >= n3){
             int maior = n1;
             System.out.println("O maior valor digitado foi: " + maior);
-        } else if (n2 > n1 && n2 > n3){
+        } else if (n2 >= n1 && n2 >= n3){
             int maior = n2;
             System.out.println("O maior valor digitado foi: " + maior);
-        } else if (n3 > n1 && n3 > n2){
+        } else if (n3 >= n1 && n3 >= n2){
             int maior = n3;
             System.out.println("O maior valor digitado foi: " + maior);
         }
