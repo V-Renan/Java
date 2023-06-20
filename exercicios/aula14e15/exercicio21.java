@@ -40,7 +40,7 @@ public class exercicio21 {
             } else if (litroA > 20){
                 double desconto = (litroA * alcool) * 5 / 100;
                 double total = (litroA * alcool) - desconto;
-                System.out.println("Total a pagar com 5% de desconto; R$" + total);
+                System.out.println("Total a pagar com 5% de desconto: R$" + total);
             }
         }
     }
