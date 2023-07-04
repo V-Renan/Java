@@ -33,10 +33,10 @@ public class exercicio03 {
         do {
             System.out.println("Wage:");
             wage = scan.nextDouble();
-            if (wage < 0) {
+            if (wage <= 0) {
                 System.out.println("ERROR! Invalid Value, try again.");
             }
-        } while (wage < 0);
+        } while (wage <= 0);
 
         do {
             System.out.println("Sex:");
