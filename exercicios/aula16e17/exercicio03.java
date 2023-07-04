@@ -9,7 +9,7 @@ public class exercicio03 {
         Scanner scan = new Scanner(System.in);
 
         String name;
-        int year;
+        int age;
         double wage;
         String sex;
         String maritalStatus;
@@ -23,12 +23,12 @@ public class exercicio03 {
         } while (name.length() <= 3);
 
         do {
-            System.out.println("Year:");
-            year = scan.nextInt();
-            if (year < 0 || year > 150) {
-                System.out.println("EEROR! Invalid Yaer, try again.");
+            System.out.println("Age:");
+            age = scan.nextInt();
+            if (age < 0 || age > 150) {
+                System.out.println("EEROR! Invalid Age, try again.");
             }
-        } while (year < 0 || year > 150);
+        } while (age < 0 || age > 150);
 
         do {
             System.out.println("Wage:");
@@ -57,7 +57,7 @@ public class exercicio03 {
                 && !maritalStatus.equalsIgnoreCase("V") && !maritalStatus.equalsIgnoreCase("D"));
 
         System.out.println("Name: " + name + " >> Amount of letters: " + name.length());
-        System.out.println("Age: " + year);
+        System.out.println("Age: " + age);
         System.out.println("Wage: R$" + wage);
         System.out.println("Sex: " + sex);
         System.out.println("Marital Status: " + maritalStatus);
