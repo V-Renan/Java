@@ -8,13 +8,16 @@ public class exercicio02 {
 
         Scanner scan = new Scanner(System.in);
 
+        String nameUser;
+        String password;
+
         while (true){
             System.out.println("Usuário:");
-            String nome = scan.next();
+            nameUser = scan.next();
             System.out.println("Senha:");
-            String senha = scan.next();
+            password = scan.next();
 
-            if (nome.equals(senha)){
+            if (nameUser.equals(password)){
                 System.out.println("ERRO! Não utilizar o nome de usuário na senha. Tente novamente!");
             }else {
                 System.out.println("Senha e Usuário válidos!");

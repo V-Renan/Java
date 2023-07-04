@@ -27,7 +27,6 @@ public class exercicio03 {
             year = scan.nextInt();
             if (year < 0 || year > 150) {
                 System.out.println("EEROR! Invalid Yaer, try again.");
-                continue;
             }
         } while (year < 0 || year > 150);
 
@@ -36,7 +35,6 @@ public class exercicio03 {
             wage = scan.nextDouble();
             if (wage < 0) {
                 System.out.println("ERROR! Invalid Value, try again.");
-                continue;
             }
         } while (wage < 0);
 
@@ -45,7 +43,6 @@ public class exercicio03 {
             sex = scan.next();
             if (!sex.equalsIgnoreCase("F") && !sex.equalsIgnoreCase("M")) {
                 System.out.println("ERROR! Invalid Sex, just [F/M].");
-                continue;
             }
         } while (!sex.equalsIgnoreCase("F") && !sex.equalsIgnoreCase("M"));
 
@@ -55,7 +52,6 @@ public class exercicio03 {
             if (!maritalStatus.equalsIgnoreCase("S") && !maritalStatus.equalsIgnoreCase("C")
                     && !maritalStatus.equalsIgnoreCase("V") && !maritalStatus.equalsIgnoreCase("D")) {
                 System.out.println("ERROR! Invalid Value, just [S,C,V,D]");
-                continue;
             }
         } while (!maritalStatus.equalsIgnoreCase("S") && !maritalStatus.equalsIgnoreCase("C")
                 && !maritalStatus.equalsIgnoreCase("V") && !maritalStatus.equalsIgnoreCase("D"));
