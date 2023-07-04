@@ -17,6 +17,7 @@ public class exercicio02 {
             if (nome.equals(senha)){
                 System.out.println("ERRO! Não utilizar o nome de usuário na senha. Tente novamente!");
             }else {
+                System.out.println("Senha e Usuário válidos!");
                 break;
             }
         }
