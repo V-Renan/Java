@@ -1,0 +1,70 @@
+package com.victor.cursojava.exercicios.aula16e17;
+
+import java.util.Scanner;
+
+public class exercicio03 {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        String name;
+        int year;
+        double wage;
+        String sex;
+        String maritalStatus;
+
+        do {
+            System.out.println("Name: ");
+            name = scan.next();
+            if (name.length() <= 3) {
+                System.out.println("Invalid name. Please enter a name with more than 3 characters.");
+            }
+        } while (name.length() <= 3);
+
+        do {
+            System.out.println("Year:");
+            year = scan.nextInt();
+            if (year < 0 || year > 150) {
+                System.out.println("EEROR! Invalid Yaer, try again.");
+                continue;
+            }
+        } while (year < 0 || year > 150);
+
+        do {
+            System.out.println("Wage:");
+            wage = scan.nextDouble();
+            if (wage < 0) {
+                System.out.println("ERROR! Invalid Value, try again.");
+                continue;
+            }
+        } while (wage < 0);
+
+        do {
+            System.out.println("Sex:");
+            sex = scan.next();
+            if (!sex.equalsIgnoreCase("F") && !sex.equalsIgnoreCase("M")) {
+                System.out.println("ERROR! Invalid Sex, just [F/M].");
+                continue;
+            }
+        } while (!sex.equalsIgnoreCase("F") && !sex.equalsIgnoreCase("M"));
+
+        do {
+            System.out.println("Marital Status:");
+            maritalStatus = scan.next();
+            if (!maritalStatus.equalsIgnoreCase("S") && !maritalStatus.equalsIgnoreCase("C")
+                    && !maritalStatus.equalsIgnoreCase("V") && !maritalStatus.equalsIgnoreCase("D")) {
+                System.out.println("ERROR! Invalid Value, just [S,C,V,D]");
+                continue;
+            }
+        } while (!maritalStatus.equalsIgnoreCase("S") && !maritalStatus.equalsIgnoreCase("C")
+                && !maritalStatus.equalsIgnoreCase("V") && !maritalStatus.equalsIgnoreCase("D"));
+
+        System.out.println("Name: " + name + " >> Amount of letters: " + name.length());
+        System.out.println("Age: " + year);
+        System.out.println("Wage: R$" + wage);
+        System.out.println("Sex: " + sex);
+        System.out.println("Marital Status: " + maritalStatus);
+
+    }
+}
