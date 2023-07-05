@@ -15,14 +15,14 @@ public class exercicio22 {
         System.out.println("Quantos Kg de Maçã?");
         double qtdMaca = scan.nextDouble();
 
-        double precoKgMorango = 0;
+        double precoKgMorango;
         if (qtdMorango <= 5){
             precoKgMorango = 2.50;
         } else {
             precoKgMorango = 2.20;
         }
 
-        double precoKgMaca = 0;
+        double precoKgMaca;
         if (qtdMaca <= 5){
             precoKgMaca = 1.80;
         } else {

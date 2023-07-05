@@ -8,7 +8,7 @@ public class exercicio01 {
 
         Scanner scan = new Scanner(System.in);
 
-        int nota = 0;
+        int nota;
 
         while (true){
             System.out.println("Digite sua nota: ");
