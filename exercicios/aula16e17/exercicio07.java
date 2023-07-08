@@ -9,7 +9,7 @@ public class exercicio07 {
         Scanner scan = new Scanner(System.in);
 
         int num;
-        int maior = 0;
+        int maior = Integer.MIN_VALUE;
 
         for (int i=1; i <=5; i++){
             System.out.println(i + "ª Value:");
