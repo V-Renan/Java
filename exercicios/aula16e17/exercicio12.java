@@ -10,7 +10,6 @@ public class exercicio12 {
 
         System.out.println("Number: ");
         int n1 = scan.nextInt();
-        int multi;
 
         System.out.println("Tabuada de " + n1);
 

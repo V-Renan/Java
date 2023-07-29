@@ -1,4 +1,4 @@
-package src.com.victor.cursojava.exercicios.aula16e17;
+package com.victor.cursojava.exercicios.aula16e17;
 
 import java.util.Scanner;
 
