@@ -1,4 +1,4 @@
-package com.victor.cursojava.exercicios.aula11a13;
+package src.com.victor.cursojava.exercicios.aula11a13;
 
 public class exercicio01 {
 
