@@ -17,7 +17,6 @@ public class exercicio31 {
         double soma = 0;
         double qtd;
         double pedido;
-        double preço = 0;
 
         System.out.println("                       CARDÁPIO");
         System.out.println("--------------------------------------------------------");
@@ -33,18 +32,19 @@ public class exercicio31 {
         while (true) {
             System.out.print("Digite o código do seu pedido: ");
             pedido = scan.nextInt();
+            double preco;
             if (pedido == 100){
-                preço = cachorroQuente;
+                preco = cachorroQuente;
             } else if (pedido == 101){
-                preço = bauruSimples;
+                preco = bauruSimples;
             } else if (pedido == 102){
-                preço = bauruComOvo;
+                preco = bauruComOvo;
             } else if (pedido == 103){
-                preço = hamburguer;
+                preco = hamburguer;
             } else if (pedido == 104){
-                preço = cheeseburguer;
+                preco = cheeseburguer;
             } else if (pedido == 105){
-                preço = refri;
+                preco = refri;
             } else {
                 System.out.println("Pedido inválido, Tente novamente!");
                 continue;
@@ -59,7 +59,7 @@ public class exercicio31 {
                 }
             }
 
-            soma += qtd * preço;
+            soma += qtd * preco;
 
             System.out.print("Deseja adicionar mais algum item? [S/N]");
             String op = scan.next();
