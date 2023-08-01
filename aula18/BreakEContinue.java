@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BreakEContinue {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -43,10 +43,11 @@ public class BreakEContinue {
         System.out.println(i);
         }*/
 
-        for (int i = num; i <= max; i++){
-            if (i % 7 == 0){
+        for (int i = num; i <= max; i++) {
+            if (i % 7 == 0) {
                 System.out.print("O valor de i é: " + i + " e é divisivel por 7.\n");
                 continue;
+            }
             System.out.println("O valor de i é: " + i);
         }
     }
