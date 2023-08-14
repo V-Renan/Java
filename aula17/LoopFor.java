@@ -1,8 +1,6 @@
 package com.victor.cursojava.aula17;
 
 public class LoopFor {
-    public LoopFor() {
-    }
 
     public static void main(String[] args) {
         int count;
@@ -32,7 +30,7 @@ public class LoopFor {
 
         soma = 0;
 
-        for(int i = 1; i < 5; soma += i++) {
+        for (int i = 1; i < 5; soma += i++) {
         }
 
         System.out.println("Valor da soma é: " + soma);
